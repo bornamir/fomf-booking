@@ -8,6 +8,10 @@
     * [2. Docker](#2-docker)
 * [API Documentation](#api-documentation)
 * [Considerations](#considerations)
+  * [validations](#validations)
+* [Next Steps](#next-steps)
+  * [1. Add Tests](#1-add-tests)
+  * [2. Enhance API Document](#2-enhance-api-document)
 <!-- TOC -->
 
 # Introduction
@@ -67,7 +71,7 @@ The only remaining situation is when there is two tickets with same date and sam
 The document does not specifically mention anything about it, but considering the fact that this API is for booking 
 tickets for an event by one person, it was assumed that tickets on the same date and with same type are not valid.
 Following the same logic, the same decision was made for the participation type based on the forth criteria.
-Hence, the validations simplified to the following:
+Hence, the time-based validations (i.e. first and forth criteria) are simplified to the following:
 
         No two tickets with same date is allowed.
 
